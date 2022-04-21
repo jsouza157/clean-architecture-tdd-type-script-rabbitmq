@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc && node ./publication/build/server.js",
-    "test": "tsc && jest ./publication/build/src/Tests"
+    "dev": "tsc && node ./build/server.js",
+    "test": "tsc && jest ./build/src/Tests"
   },
   "author": "Jefferson Souza",
   "license": "ISC",

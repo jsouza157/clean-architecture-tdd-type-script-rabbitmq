@@ -5,7 +5,7 @@ import UserRepository from "../../Infra/Repository/UserRepository";
 
 test("Should create a new user", async function () {
     const create = new CreateUserUseCase(new UserRepository);
-    const user = await create.handle("Jefferson", "Souza", "jeff@gmail.com", "123");
+    const user = await create.handle("Jefferson", "Souza", "salomao@gmail.com", "123");
     const email = new EmailService(user.email, "Bem-vindo", "Teste de message broker");
     const messageBroker = new MessageBroker();
     await email.send(messageBroker);

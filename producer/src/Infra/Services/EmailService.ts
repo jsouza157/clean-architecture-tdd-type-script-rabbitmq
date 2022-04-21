@@ -15,7 +15,7 @@ export default class EmailService implements IMailService {
 
     public async send(messageBroker : MessageBroker): Promise<void> {
         const connection = await messageBroker.connection();
-        const channel: Channel = await connection.createChannel()
+        const channel: Channel = await connection.createChannel();
         await channel.assertQueue('emailQueue');
 
         channel.sendToQueue('emailQueue', Buffer.from(this.to));
