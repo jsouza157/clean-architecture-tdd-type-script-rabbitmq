@@ -14,7 +14,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "tsc && node ./consumer/build/server.js"
+    "dev": "tsc && node ./build/server.js"
   },
   "author": "Jefferson Souza",
   "license": "ISC"
