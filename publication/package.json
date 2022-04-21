@@ -1,0 +1,27 @@
+{
+  "name": "typescript-rabbitmq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc && node ./publication/build/server.js",
+    "test": "tsc && jest ./publication/build/src/Tests"
+  },
+  "author": "Jefferson Souza",
+  "license": "ISC",
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.25",
+    "amqplib": "^0.8.0",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jest": "^27.5.1",
+    "save": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.8.2"
+  }
+}

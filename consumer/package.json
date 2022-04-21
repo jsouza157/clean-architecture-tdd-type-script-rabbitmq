@@ -1,0 +1,21 @@
+{
+  "name": "consumer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/amqplib": "^0.8.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.25",
+    "amqplib": "^0.8.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "tsc && node ./consumer/build/server.js"
+  },
+  "author": "Jefferson Souza",
+  "license": "ISC"
+}
